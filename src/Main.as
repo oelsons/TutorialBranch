@@ -2,6 +2,7 @@ package
 {
 	import flash.display.Sprite;
 	import flash.events.Event;
+	import flash.text.TextField;
 	
 	/**
 	 * ...
@@ -20,8 +21,10 @@ package
 		{
 			removeEventListener(Event.ADDED_TO_STAGE, init);
 			// entry point
+			
+			var tf:TextField = new TextField();
+			tf.text = "Hello World";
+			addChild(tf);
 		}
-		
 	}
-	
 }

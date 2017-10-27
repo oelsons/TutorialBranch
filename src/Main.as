@@ -22,9 +22,13 @@ package
 			removeEventListener(Event.ADDED_TO_STAGE, init);
 			// entry point
 			
-			var tf:TextField = new TextField();
-			tf.text = "Hello World";
-			addChild(tf);
+			for (var i:int = 0; i < 10; i++) 
+			{
+				var tf:TextField = new TextField();
+				tf.text = "Hello World";
+				tf.y = 10 * i;
+				addChild(tf);
+			}
 		}
 	}
 }
